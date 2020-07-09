@@ -25,14 +25,14 @@ Output:- [(["hello", there", "this", "is"], ["."]),
 	  ([".", "this", "an", "example"], ["is"]),
 	  (["this", "is", "example", "sentence"], ["an"])]
 
-### Data Prep
+# Data Prep
 
 Convert the context vectors to one-hot vectors and take the average, this would be the input to our shallow nertwork. The output would be the one-hot vector of the center word.
 
-### Embedding Matrix
+# Embedding Matrix
 
 After training the model we extract the embedding matrix by taking the average of <b>W1</b> and <b>W2<sup>T</sup></b>, this would be our embedding matrix.
 
-### Visualizing the Embedding Matrix
+# Visualizing the Embedding Matrix
 
 Since our vocabulary consists of around 5K words, we limit our embedding matrix size to around 50 - 100 words and apply the dimensionality reduction technique <b>t-SNE</b> and annotate with our vocabulary...
